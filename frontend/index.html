@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Student Skill Marketplace</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Student Skill Marketplace</h1>
+
+      <section id="messages"></section>
+
+      <section>
+        <h2>Register</h2>
+        <form id="form-register">
+          <input name="email" placeholder="email" required />
+          <input name="full_name" placeholder="Full name" />
+          <input name="password" type="password" placeholder="password" required />
+          <button>Register</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Login</h2>
+        <form id="form-login">
+          <input name="username" placeholder="email" required />
+          <input name="password" type="password" placeholder="password" required />
+          <button>Login</button>
+        </form>
+        <div style="margin-top:8px">
+          <button id="btn-profile">Get Profile</button>
+          <button id="btn-logout">Logout</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Verify Email</h2>
+        <form id="form-verify">
+          <input name="email" placeholder="email" required />
+          <input name="code" placeholder="OTP code" required />
+          <button>Verify</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Password Reset (request)</h2>
+        <form id="form-reset-request">
+          <input name="email" placeholder="email" required />
+          <button>Request Reset</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Password Reset (confirm)</h2>
+        <form id="form-reset-confirm">
+          <input name="email" placeholder="email" required />
+          <input name="token" placeholder="reset token" required />
+          <input name="new_password" type="password" placeholder="new password" required />
+          <button>Confirm Reset</button>
+        </form>
+      </section>
+
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
